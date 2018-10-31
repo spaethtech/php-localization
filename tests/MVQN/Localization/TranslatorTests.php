@@ -1,5 +1,5 @@
 <?php
-/** @noinspection SpellCheckingInspection Disable due to numerous translations! */
+/** @noinspection SpellCheckingInspection - Disable due to numerous translations! */
 
 use MVQN\Localization\Locale;
 use MVQN\Localization\Translator;

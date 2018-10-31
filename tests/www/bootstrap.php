@@ -12,6 +12,7 @@ use MVQN\Localization\Translator;
  * @author Ryan Spaeth <rspaeth@mvqn.net>
  */
 
+// IMPORTANT: Set the dictionary directory and "default" locale before using any other functions of the Translator!
 Translator::setDictionaryDirectory(__DIR__."/../translations/");
 Translator::setCurrentLocale("en-US");
 
@@ -19,8 +20,10 @@ Translator::setCurrentLocale("en-US");
 $twig = new Twig_Environment(
     new Twig_Loader_Filesystem(__DIR__ . "/twig/"),
     [
+        // TODO: Make sure cached templates honor the translations!
         //"cache" => __DIR__."/twig/.cache/", // Can optionally be enabled after development is complete!
     ]
 );
 
+// IMPORTANT: Add the "translate" filter to the Twig environment, otherwise the |translate filter will not function!
 $twig->addFilter(Translator::getTwigFilterTranslate());
