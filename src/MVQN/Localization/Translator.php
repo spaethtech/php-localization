@@ -580,36 +580,23 @@ final class Translator
 
 
 
-    public static function getTwigFilterTranslate(): callable //\Twig_Filter
+    public static function getTwigFilterTranslate(): \Twig_Filter
     {
-        return function(string $text, string $locale = "")
-        {
-            if ($locale === "")
-                $locale = Translator::getCurrentLocale();
+        return new \Twig_Filter("translate",
+            function(string $text, string $locale = "")
+            {
+                if ($locale === "")
+                    $locale = Translator::getCurrentLocale();
 
-            if(Translator::knows($text, $locale))
+                if(Translator::knows($text, $locale))
+                    return Translator::ask($text, $locale);
+
+                Translator::introduce($text);
+                Translator::share([ $locale ]);
+
                 return Translator::ask($text, $locale);
-
-            Translator::introduce($text);
-            Translator::share([ $locale ]);
-
-            return Translator::ask($text, $locale);
-        };
-
-        /*
-        return new \Twig_Filter("translate", function(string $text, string $locale = "")
-        {
-            if($locale !== "" && Translator::isSupportedLocale($locale))
-                Translator::setCurrentLocale($locale);
-
-            $translated = Translator::translate($text);
-
-            if($translated === null)
-                Translator::teach($text, $text);
-
-            return Translator::translate($text);
-        });
-        */
+            }
+        );
     }
 
 
