@@ -549,7 +549,7 @@ final class Translator
             if($locale === self::TEACHING_LOCALE)
                 continue;
 
-            echo "Starting Translator::share() on '$locale'...";
+            //echo "Starting Translator::share() on '$locale'...";
 
             $currentTranslations = self::loadDictionary($locale);
 
@@ -561,7 +561,7 @@ final class Translator
                 {
                     $currentTranslations[$key] = self::learn($key, $locale); //, false);
                     $updated = true;
-                    echo ".";
+                    //echo ".";
                 }
             }
 
@@ -570,7 +570,7 @@ final class Translator
             if($updated)
                 $sharedTo[] = $locale;
 
-            echo "DONE!\n";
+            //echo "DONE!\n";
         }
 
         return $sharedTo;
