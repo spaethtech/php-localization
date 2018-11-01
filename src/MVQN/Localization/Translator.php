@@ -546,6 +546,8 @@ final class Translator
 
         foreach($locales as $locale)
         {
+            echo "Starting Translator::share() on '$locale'...";
+
             if($locale === self::TEACHING_LOCALE)
                 continue;
 
@@ -559,6 +561,7 @@ final class Translator
                 {
                     $currentTranslations[$key] = self::learn($key, $locale); //, false);
                     $updated = true;
+                    echo ".";
                 }
             }
 
@@ -566,6 +569,8 @@ final class Translator
 
             if($updated)
                 $sharedTo[] = $locale;
+
+            echo "DONE!\n";
         }
 
         return $sharedTo;
