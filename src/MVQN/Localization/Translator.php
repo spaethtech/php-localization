@@ -546,10 +546,10 @@ final class Translator
 
         foreach($locales as $locale)
         {
-            echo "Starting Translator::share() on '$locale'...";
-
             if($locale === self::TEACHING_LOCALE)
                 continue;
+
+            echo "Starting Translator::share() on '$locale'...";
 
             $currentTranslations = self::loadDictionary($locale);
 
