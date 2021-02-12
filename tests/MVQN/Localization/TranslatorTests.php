@@ -1,9 +1,9 @@
 <?php
 /** @noinspection SpellCheckingInspection - Disable due to numerous translations! */
 
-use MVQN\Localization\Locale;
-use MVQN\Localization\Translator;
-use MVQN\Localization\Exceptions\TranslatorException;
+use rspaeth\Localization\Locale;
+use rspaeth\Localization\Translator;
+use rspaeth\Localization\Exceptions\TranslatorException;
 
 /**
  * Class TranslatorTests

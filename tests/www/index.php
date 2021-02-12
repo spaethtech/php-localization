@@ -5,8 +5,8 @@ declare(strict_types=1);
 require_once __DIR__ . "/../../vendor/autoload.php";
 require_once __DIR__ . "/bootstrap.php";
 
-use MVQN\Localization\Locale;
-use MVQN\Localization\Translator;
+use rspaeth\Localization\Locale;
+use rspaeth\Localization\Translator;
 
 // IMPORTANT: Supported locales are configured as constants in the Locale class and can be passed directly to
 // Translator::setCurrentLocale().

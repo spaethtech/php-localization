@@ -1,5 +1,5 @@
 # mvqn/common
-A library of common classes and functions, specifically designed for use in MVQN projects, but generic enough for anything!
+A library of common classes and functions, specifically designed for use in rspaeth projects, but generic enough for anything!
 
 ## Installation
 Install the latest version with
