@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace rspaeth\Localization;
+namespace MVQN\Localization;
 
-use rspaeth\Localization\Exceptions\DictionaryException;
+use MVQN\Localization\Exceptions\DictionaryException;
 use Stichoza\GoogleTranslate\TranslateClient;
 
-use rspaeth\Localization\Exceptions\TranslatorException;
+use MVQN\Localization\Exceptions\TranslatorException;
 
 final class Translator
 {

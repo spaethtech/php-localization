@@ -2,7 +2,7 @@
 declare(strict_types=1);
 require_once __DIR__ . "/../../vendor/autoload.php";
 
-use rspaeth\Localization\Translator;
+use MVQN\Localization\Translator;
 
 /**
  * bootstrap.php

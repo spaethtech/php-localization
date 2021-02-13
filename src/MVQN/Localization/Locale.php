@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace rspaeth\Localization;
+namespace MVQN\Localization;
 
 final class Locale
 {
