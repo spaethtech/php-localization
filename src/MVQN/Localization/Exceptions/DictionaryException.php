@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace MVQN\Localization\Exceptions;
+namespace SpaethTech\Localization\Exceptions;
 
 
 final class DictionaryException extends \Exception

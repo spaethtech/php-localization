@@ -1,12 +1,12 @@
 {
-    "name": "mvqn/localization",
+    "name": "spaethtech/localization",
     "description": "A library for localization and translations.",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
             "name": "Ryan Spaeth",
-            "email": "rspaeth@mvqn.net"
+            "email": "rspaeth@spaethtech.com"
         }
     ],
     "require": {
@@ -20,12 +20,12 @@
     },
     "autoload": {
         "psr-4": {
-            "MVQN\\": "./src/MVQN/"
+            "SpaethTech\\": "./src/spaethtech/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "MVQN\\": "./tests/MVQN/"
+            "SpaethTech\\": "./tests/spaethtech/"
         }
     },
     "minimum-stability": "dev",

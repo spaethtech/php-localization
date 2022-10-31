@@ -1,14 +1,14 @@
 <?php
 /** @noinspection SpellCheckingInspection - Disable due to numerous translations! */
 
-use MVQN\Localization\Locale;
-use MVQN\Localization\Translator;
-use MVQN\Localization\Exceptions\TranslatorException;
+use SpaethTech\Localization\Locale;
+use SpaethTech\Localization\Translator;
+use SpaethTech\Localization\Exceptions\TranslatorException;
 
 /**
  * Class TranslatorTests
  *
- * @author Ryan Spaeth <rspaeth@mvqn.net>
+ * @author Ryan Spaeth <rspaeth@spaethtech.com>
  */
 class TranslatorTests extends PHPUnit\Framework\TestCase
 {

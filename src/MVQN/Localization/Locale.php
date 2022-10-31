@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace MVQN\Localization;
+namespace SpaethTech\Localization;
 
 final class Locale
 {

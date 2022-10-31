@@ -2,14 +2,14 @@
 declare(strict_types=1);
 require_once __DIR__ . "/../../vendor/autoload.php";
 
-use MVQN\Localization\Translator;
+use SpaethTech\Localization\Translator;
 
 /**
  * bootstrap.php
  *
  * A common configuration and initialization file.
  *
- * @author Ryan Spaeth <rspaeth@mvqn.net>
+ * @author Ryan Spaeth <rspaeth@spaethtech.com>
  */
 
 // IMPORTANT: Set the dictionary directory and "default" locale before using any other functions of the Translator!
