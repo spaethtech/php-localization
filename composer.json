@@ -1,5 +1,5 @@
 {
-    "name": "spaethtech/localization",
+    "name": "spaethtech/php-localization",
     "description": "A library for localization and translations.",
     "type": "library",
     "license": "MIT",
