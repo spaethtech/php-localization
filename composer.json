@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "php": "~7.3",
+        "php": ">=8.1",
         "ext-json": "*",
         "stichoza/google-translate-php": "^3.2"
     },
